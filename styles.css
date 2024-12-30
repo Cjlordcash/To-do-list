@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  background-image: url("https://media.istockphoto.com/id/1187179171/photo/futuristic-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=JomPgHrPNRt7TLkA9rQt1DiwQ3j8yq8F3SttK4KWVBE=");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* backdrop-filter: 1.5; */
+  /* padding: 12px;
+  background: linear-gradient(145deg, #1f0325e1, #22045fc9, #2a063fe1);  */
+}
+
+.todo {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 12px;
+}
+
+.todo h1 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.todo h1 img {
+  width: 40px;
+  margin-left: 6px;
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e4e1e1ea;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  font-weight: 16px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #002765;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #ff5945;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px 8px 12px 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url(images/uncheck.png);
+  background-size: cover;
+  background-position: center;
+  top: 9px;
+  left: 7px;
+}
+
+.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/check.png);
+}
+
+ul li span {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+ul li span:hover {
+  background: #edeefc;
+}
